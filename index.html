@@ -1,47 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paquetes</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHTZJ74LV7"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HHTZJ74LV7"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-HHTZJ74LV7');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-HHTZJ74LV7");
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4543061081308308"
-     crossorigin="anonymous"></script>
-
-</head>
-<body style="margin: auto; text-align: center;">
-    <h1>Calcular paquetes</h1>
-    <table style="margin: auto; text-align: center;">
-        <tr><td><h3>Barra</h3></td></tr>
-        <tr><td><input type="number" name="pesoBarra" id="pesoBarra" placeholder="KG"></td></tr>
-        <tr><td><input type="number" name="cantBarra" id="cantBarra" placeholder="Cantidad"></td></tr>
-        <tr><td><h3>Paquete</h3></td></tr>
-        <tr><td><input type="number" name="pesoMaxPaquete" id="pesoMaxPaquete" placeholder="Peso maximo en KG"></td></tr>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4543061081308308"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="margin: auto; text-align: center">
+    <h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        fill="currentColor"
+        class="bi bi-arrow-left-circle-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
+        />
+      </svg>
+      Calcular paquetes
+    </h1>
+    <table style="margin: auto; text-align: center">
+      <tr>
+        <td><h3>Barra</h3></td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            type="number"
+            name="pesoBarra"
+            id="pesoBarra"
+            placeholder="KG"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            type="number"
+            name="cantBarra"
+            id="cantBarra"
+            placeholder="Cantidad"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><h3>Paquete</h3></td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            type="number"
+            name="pesoMaxPaquete"
+            id="pesoMaxPaquete"
+            placeholder="Peso maximo en KG"
+          />
+        </td>
+      </tr>
     </table>
-    <hr>
-    <div id="solucion1" style="display: none;">
-        <h3>Grupo 1</h3>
-        <p id="yPaquetes"></p>
-        <p id="xBarras"></p>
-        <p id="zPesoPorPaquete"></p>
-        <div id="solucion2" style="display: none;">
-            <hr>
-            <h3>Grupo 2</h3>
-            <p id="bPaquetes"></p>
-            <p id="aBarras"></p>
-            <p id="cPesoPorPaquete"></p>
-        </div>
+    <hr />
+    <div id="solucion1" style="display: none">
+      <h3>Grupo 1</h3>
+      <p id="yPaquetes"></p>
+      <p id="xBarras"></p>
+      <p id="zPesoPorPaquete"></p>
+      <div id="solucion2" style="display: none">
+        <hr />
+        <h3>Grupo 2</h3>
+        <p id="bPaquetes"></p>
+        <p id="aBarras"></p>
+        <p id="cPesoPorPaquete"></p>
+      </div>
     </div>
-    <hr>
+    <hr />
     <button onclick="calcular()">Calcular</button>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
