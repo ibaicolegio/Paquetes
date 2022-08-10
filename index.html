@@ -35,49 +35,52 @@
       <br />
       <div class="row row-cols-1 g-4">
         <div class="col">
-          <div class="card bg-light" onclick="location.href='https://ibaicolegio.github.io/'">
+          <div
+            class="card bg-light"
+            onclick="location.href='https://ibaicolegio.github.io/'"
+          >
             <h1>Programas</h1>
           </div>
         </div>
       </div>
       <hr />
-    </div>
-    <h1>Calcular paquetes</h1>
-    <!-- Barras y paquetes -->
-    <form class="row gy-2 gx-3 align-items-center">
-      <div class="container p-4">
-        <br />
-        <div class="row row-cols-2 g-4">
-          <div class="col text-center">
-            <h3>Barra</h3>
-            <div class="col-12">
-              <div class="input-group">
-                <input
-                  type="number"
-                  name="pesoBarra"
-                  class="form-control"
-                  id="pesoBarra"
-                  placeholder="Peso barra"
-                />
-                <div class="input-group-text">KG</div>
+
+      <h1>Calcular paquetes</h1>
+      <!-- Barras y paquetes -->
+      <form class="row gy-2 gx-3 align-items-center">
+        <div class="container p-4">
+          <br />
+          <div class="row row-cols-2 g-4">
+            <div class="col text-center">
+              <h3>Barra</h3>
+              <div class="col-12">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    name="pesoBarra"
+                    class="form-control"
+                    id="pesoBarra"
+                    placeholder="Peso barra"
+                  />
+                  <div class="input-group-text">KG</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="input-group">
+                  <input
+                    type="number"
+                    name="cantBarra"
+                    class="form-control"
+                    id="cantBarra"
+                    placeholder="Cantidad unidades"
+                  />
+                  <div class="input-group-text">Ud</div>
+                </div>
               </div>
             </div>
-            <div class="col-12">
-              <div class="input-group">
-                <input
-                  type="number"
-                  name="cantBarra"
-                  class="form-control"
-                  id="cantBarra"
-                  placeholder="Cantidad unidades"
-                />
-                <div class="input-group-text">Ud</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <h3>Paquete</h3>
-            <div class="col-12 mt-4">
+            <div class="col">
+              <h3>Paquete</h3>
+              <div class="col-12 mt-4">
                 <div class="input-group">
                   <input
                     type="number"
@@ -89,49 +92,52 @@
                   <div class="input-group-text">KG</div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="row row-cols-2 g-4">
+            <div class="col-auto"></div>
+            <div class="col-auto"></div>
+          </div>
+          <div class="row row-cols-2 g-4">
+            <div class="col-auto"></div>
           </div>
         </div>
-        <div class="row row-cols-2 g-4">
-          <div class="col-auto"></div>
-          <div class="col-auto"></div>
-        </div>
-        <div class="row row-cols-2 g-4">
-          <div class="col-auto"></div>
+      </form>
+      <!-- FIN --- Barras y paquetes -->
+      <hr />
+      <div class="container">
+        <div class="row row-cols-2">
+          <div class="col">
+            <div
+              class="card bg-light m-auto"
+              id="solucion1"
+              style="display: none"
+            >
+              <h3>Grupo 1</h3>
+              <p id="yPaquetes"></p>
+              <p id="xBarras"></p>
+              <p id="zPesoPorPaquete"></p>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card bg-light m-auto"
+              id="solucion2"
+              style="display: none"
+            >
+              <h3>Grupo 2</h3>
+              <p id="bPaquetes"></p>
+              <p id="aBarras"></p>
+              <p id="cPesoPorPaquete"></p>
+            </div>
+          </div>
         </div>
       </div>
-    </form>
-    <!-- FIN --- Barras y paquetes -->
-    <hr />
-    <div class="container">
-      <div class="row row-cols-2">
-        <div class="col">
-          <div
-            class="card bg-light m-auto"
-            id="solucion1"
-            style="display: none"
-          >
-            <h3>Grupo 1</h3>
-            <p id="yPaquetes"></p>
-            <p id="xBarras"></p>
-            <p id="zPesoPorPaquete"></p>
-          </div>
-        </div>
-        <div class="col">
-          <div
-            class="card bg-light m-auto"
-            id="solucion2"
-            style="display: none"
-          >
-            <h3>Grupo 2</h3>
-            <p id="bPaquetes"></p>
-            <p id="aBarras"></p>
-            <p id="cPesoPorPaquete"></p>
-          </div>
-        </div>
-      </div>
+      <hr />
+      <button class="btn btn-secondary border" onclick="calcular()">
+        Calcular
+      </button>
     </div>
-    <hr />
-    <button class="btn btn-secondary border" onclick="calcular()">Calcular</button>
     <script src="index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
